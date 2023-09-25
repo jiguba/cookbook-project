@@ -27,27 +27,20 @@ export default function CreateRecipe() {
                 ...prevRecipe, [name]: value
             }
         })
-
-        console.log(recipe);
     }
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         const { name, directions } = recipe
-        console.log(name, directions);
 
-        console.log(createRecipeURL);
         const res = await fetch(createRecipeURL, {
             method: 'POST',
             body: JSON.stringify({name, directions})
         })
 
-
         const result = await res.json()
-        console.log("The result is" + result);
         const recipeId = result.id;
-        console.log(recipeId);
 
         router.push(`/addIngredient/${recipeId}`);
 

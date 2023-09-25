@@ -1,9 +1,12 @@
-import CreateRecipe from "./components/SearchAppBar"
+import './recipes/styles.css'
+
+import Box from '@mui/material/Box';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello, this is my cookbook!</h1>
-    </div>
+    <Box className="recipeContainer"
+      style={{justifyContent: "center"}}>
+      <h1 style={{fontSize: "3rem"}}>Jason Guba's Cookbook App for Appiphony</h1> 
+    </Box>
     )
 }

@@ -18,7 +18,6 @@ export default function SearchRecipes() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const handleClick = async (searchQuery) => {    
-        console.log(searchQuery);
         const res = await fetch(`${searchRecipeURL}?${encodeURIComponent(key)}=${encodeURIComponent(searchQuery)}`, {
             method: 'GET',
         })
@@ -26,7 +25,6 @@ export default function SearchRecipes() {
         if (res.ok) {
             // Parse the JSON data from the response
             const filteredData = await res.json();
-            console.log("Result was okay!");
             setFilteredRecipes(filteredData);
         } else {
             // Handle HTTP errors

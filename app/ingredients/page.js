@@ -37,7 +37,6 @@ export default function SearchRecipes() {
             if (res.ok) {
                 // Parse the JSON data from the response
                 const filteredIngredients = await res.json();
-                console.log("Result was okay!");
                 setFilteredIngredients(filteredIngredients);
                 setSearchQuery("");
             } else {
