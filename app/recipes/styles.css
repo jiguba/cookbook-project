@@ -1,0 +1,58 @@
+.recipeContainer {
+    /* Container Styling */
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Use flex to limit the number of recipes per row */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    /* Text Styling */
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+    /* Background Styling */
+    background-color: #f8f8f8;
+  }
+
+.recipe {
+    flex: 1 0 calc(33.333% - 10px); 
+    margin: 5px;
+}
+  
+.recipeTitle {
+    /* Title Styling */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #e44d26;
+}
+  
+.recipeContent {
+    /* Paragraph Styling */
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+  
+.recipeContainer ul {
+    /* List Styling */
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.searchContainer {
+    width: 90%;
+    margin: 20px auto;
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+
+    font-family: Arial, sans-serif;
+    color: #333;
+}

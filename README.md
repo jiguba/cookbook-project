@@ -20,17 +20,16 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Uses Cases:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Users should be able to fill out a form to create a recipe record
+Users should be able to search recipes by name 
+View it’s ingredients
+View it’s directions
+Users should be able to add ingredient to an existing recipe
+Users should be able to search ingredients by name
+View all recipes that contain that ingredient
+Be creative. Add another feature for extra points
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://momentum-app-1267-dev-ed.scratch.my.salesforce-sites.com/services/apexrest/cookbook
